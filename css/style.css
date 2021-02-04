@@ -4,86 +4,109 @@
   box-sizing: border-box;
 }
 
-[class*="col-"] {
-  height: 250px;
-  position: relative;
+/* utility */
+
+.padding_top_standard {
+  padding-top: 30px;
 }
- /* header */
+
+.padding_bottom_standard {
+  padding-bottom: 30px;
+}
+
+
+/* header */
+
 .navbar {
   background-color: #2c3e50;
   margin-bottom: 0;
 }
-
-.navbar-brand {
+.navbar_logo {
   color: white;
-  margin-left: 60px;
+}
+a.navbar_logo  {
+    text-decoration: none;
 }
 
-.nav-item ul li {
+.ms_nav {
   float: right;
-  display: table;
-  list-style: none;
-  padding-right: 20px;
-  vertical-align: middle;
+  margin-top: 10px;
 }
-.nav-item ul li a {
+.ms_nav li a {
+  color: white;
   text-decoration: none;
+}
+.ms_nav li a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+i.hamburger {
+  float: right;
+  font-size: 40px;
+  color: white;
+}
+.bg-primary {
+  background-color: #1abc9c;
+}
+.wrapper {
+width: 50%;
+margin: 0 auto;
+}
+
+.jumbo_img {
+  width: 40%;
+  padding: 30px;
+}
+
+.text-white {
   color: white;
 }
 
-/* banner */
-.jumbotron {
-  position: relative;
-  background-color: #1abc9c;
-  height: 30vh;
-}
- .jumbo-items {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
+i.star {
+  font-size: 30px;
+  padding: 20px;
 }
 
-
+.text_left {
+  text-align: left;
+}
 /* main */
-.container {
-  height: 400px;
-}
 .box {
-  background-color: pink;
-  border: 1px solid black;
+  padding: 20px 5px;
+  margin: 5px 0;
+}
+.box img {
+  width: 100%;
+  border-radius: 5px;
 }
 
-.row-portfolio {
-  max-width: 80%;
-  margin: 0 auto;
-}
-h1.portfolio,
-h1.about-text,
-h1.contact-text {
-  text-align: center;
-}
-
-.about {
-  background-color: #1abc9c;
-  height: auto;
-  margin-top: 30px;
+.btn_transparent {
+  background: transparent;
   color: white;
+  border-color: white;
+}
+.btn span {
+  padding-right: 5px;
 }
 
-.btn-send {
+.btn_green {
   background-color: #1abc9c;
-  color: white;
+  margin: 10px;
 }
+/* form sezione contact me */
+
+.ms_form_group {
+  float: left;
+}
+
 
 /* footer */
-
-footer {
-  margin-top: 30px;
-  background-color: #2c3e50;
+.ms_footer_top {
+  background-color: #3a546d;
 }
 
-.footer-text {
-  color: white;
+.ms_footer_bottom {
+  background-color: #2c3e50;
+  padding: 30px;
 }
