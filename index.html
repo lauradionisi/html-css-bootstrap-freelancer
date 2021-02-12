@@ -12,13 +12,13 @@
   <body>
     <header>
       <nav class="navbar navbar-fixed-top text-uppercase">
-        <div class="container">
-          <div class="row">
+        <div class="container_nav">
+
             <div class="col-xs-6">
               <p><a class="navbar-text navbar_logo" href="#">START BOOTSTRAP</a></p>
             </div>
-            <div class="align-middle col-xs-6 text-right">
-              <ul class="ms_nav list-inline visible-lg visible-md">
+            <div class="align-middle col-xs-6">
+              <ul class="navbar-right ms_nav list-inline visible-lg visible-md">
                 <li><a href="#">PORTFOLIO</a></li>
                 <li><a href="#">ABOUT</a></li>
                 <li><a href="#">CONTACT</a></li>
@@ -27,22 +27,26 @@
                 <i class="hamburger fas fa-bars"></i>
               </nav>
             </div>
-          </div>
+
         </div>
       </nav>
+      </header>
       <div class="jumbotron jumbotron-fluid bg-primary bg_1abc9c padding_top_standard padding_bottom_standard">
         <div class="wrapper text-white">
             <div class="row">
               <div class="col-xs-12 text-center">
                 <img class="jumbo_img" src="img/jumbo-img.svg" alt="artist">
                 <h1>START BOOTSTRAP</h1>
-                <i class="fas fa-star star"></i>
+                <div class="ms_star">
+                  <i class="fas fa-star star"></i>
+                </div>
+
                 <p class="text-uppercase">graphic artist - web designer - illustrator</p>
               </div>
             </div>
         </div>
       </div>
-    </header>
+
 
     <main>
       <section id="portfolio" class= "text-center padding_top_standard padding_bottom_standard">
@@ -50,37 +54,57 @@
           <div class="row">
             <div class="col-xs-12">
               <h2>PORTFOLIO</h2>
-              <i class="fas fa-star star"></i>
+              <div class="ms_star ms_star_black">
+                <i class="fas fa-star star"></i>
+              </div>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 ">
               <div class="box">
+                <div class="ms_layover">
+                  <i class="plus fas fa-plus"></i>
+                </div>
                 <img src="img/cabin.png" alt="cabin">
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="box">
+                <div class="ms_layover">
+                  <i class="plus fas fa-plus"></i>
+                </div>
                 <img src="img/cake.png" alt="cake">
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="box">
+                <div class="ms_layover">
+                  <i class="plus fas fa-plus"></i>
+                </div>
                 <img src="img/circus.png" alt="">
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="box">
+                <div class="ms_layover">
+                  <i class="plus fas fa-plus"></i>
+                </div>
                 <img src="img/game.png" alt="game">
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="box">
+                <div class="ms_layover">
+                  <i class="plus fas fa-plus"></i>
+                </div>
                 <img src="img/safe.png" alt="safe">
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4">
               <div class="box">
+                <div class="ms_layover">
+                  <i class="plus fas fa-plus"></i>
+                </div>
                 <img src="img/submarine.png" alt="">
               </div>
             </div>
@@ -93,7 +117,9 @@
             <div class="row">
               <div class="col-xs-12">
                 <h2>ABOUT</h2>
-                <i class="fas fa-star star"></i>
+                <div class="ms_star">
+                  <i class="fas fa-star star"></i>
+                </div>
               </div>
             </div>
             <div class="row">
@@ -108,22 +134,27 @@
           </div>
         </div>
       </section>
-      <section id="contact" class="text-center padding_top_standard padding_bottom_standar">
+      <section id="contact" class="padding_top_standard padding_bottom_standard">
         <div class="wrapper">
           <div class="container-fluid">
             <div class="row ms_form_group">
               <div class="col-xs-12">
-                <h2>CONTACT ME</h2>
-                <div>
-                  <input type="name" placeholder="Name" value="">
-                  <hr>
-                  <input type="name" placeholder="Email Address" value="">
-                  <hr>
-                  <input type="name" placeholder="Phone Number" value="">
-                  <hr>
-                  <textarea class="form-control" rows="3" cols="50" placeholder="Message"></textarea>
+                <div class="text-center">
+                  <h2>CONTACT ME</h2>
+                  <div class="ms_star ms_star_black">
+                    <i class="fas fa-star star"></i>
+                  </div>
                 </div>
-                <button type="button" class="btn btn-success btn_green">Success</button>
+                <div>
+                  <input class="ms_input" type="name" placeholder="Name" value="">
+                  <hr>
+                  <input class="ms_input" type="name" placeholder="Email Address" value="">
+                  <hr>
+                  <input class="ms_input" type="name" placeholder="Phone Number" value="">
+                  <hr>
+                  <textarea class="ms_input form-control" rows="3" cols="50" placeholder="Message"></textarea>
+                </div>
+                <button type="button" class="btn btn-success btn_green">Send</button>
               </div>
             </div>
           </div>
@@ -136,18 +167,32 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-md-4">
-              <div class="text">
+              <div class="text text-center">
                 <h4>LOCATION</h4>
+                <p>2215 John Daniel Drive Clark, MO 54243</p>
               </div>
             </div>
-            <div class="col-xs-12 col-md-4">
-              <div class="text">
+            <div class="col-xs-12 col-md-4 text-center">
+              <div class="text text-center">
                 <h4>AROUND THE WEB</h4>
+                <div class="circle text-center">
+                  <i class="logo_social fab fa-facebook-square" style="font-size:24px"></i>
+                </div>
+                <div class="circle">
+                  <i class="logo_social fab fa-google-plus-g"></i>
+                </div>
+                <div class="circle">
+                  <i class="logo_social fab fa-twitter" style="font-size:24px"></i>
+                </div>
+                <div class="circle">
+                  <i class="logo_social fab fa-linkedin" style="font-size:24px"></i>
+                </div>
               </div>
             </div>
             <div class="col-xs-12 col-md-4">
-              <div class="text">
+              <div class="text text-center">
                 <h4>ABOUT FREELANCER</h4>
+                <p>Freelance is a free to use, open source Bootstrap theme created by <a class="footer_link" href="#">Start Bootstrap</a>. </p>
               </div>
             </div>
 
